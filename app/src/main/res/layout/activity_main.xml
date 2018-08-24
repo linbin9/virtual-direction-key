@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,24 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.directionkey.MainActivity">
 
-    <com.example.administrator.directionkey.Direction
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:onClick="r" />
-
     <com.example.administrator.directionkey.DL
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:onClick="l"/>
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_x="145dp"
+        android:layout_y="350dp" />
 
-    <com.example.administrator.directionkey.DU
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:onClick="u"/>
+    <com.example.administrator.directionkey.Direction
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_x="260dp"
+        android:layout_y="350dp" />
 
     <com.example.administrator.directionkey.DD
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:onClick="d"/>
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_x="200dp"
+        android:layout_y="380dp" />
 
-</RelativeLayout>
+    <com.example.administrator.directionkey.DU
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_x="200dp"
+        android:layout_y="320dp" />
+
+</AbsoluteLayout>
